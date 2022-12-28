@@ -1,5 +1,25 @@
 /* imports */
 @font-face {
+    font-family: TitilliumWeb-Black;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb-SemiBold;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb-Bold;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb-Regular;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
     font-family: Inter-Regular;
     src: url(../assets/fonts/Inter/static/Inter-Regular.ttf);
 }
@@ -26,12 +46,13 @@ header {
     /* apenas para referência dos menus */
     top: 0;
     left: 0;
+    z-index: 1000;
     display: flex;
     align-items: center;
     width: 100%;
     height: 60px;
     padding: 0 10px;
-    background-image: linear-gradient(to right, #1B1426);
+    background-color: #1B1426;
     font-size: 16px;
 }
 
@@ -77,8 +98,10 @@ header .nav-bkg {
     position: fixed;
     top: 60px;
     left: -300px;
+    /* z-index: 2; */
     width: 270px;
-    height: calc(100vh - 60px);/* apagar */
+    height: calc(100vh - 60px);
+    /* apagar */
     padding: 1px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, .3), rgba(255, 255, 255, .05));
     transition: left 0.4s;
@@ -139,7 +162,7 @@ header .nav-bkg {
 
 .header nav .social-box {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 0;
     display: flex;
     justify-content: center;
@@ -151,8 +174,9 @@ header .nav-bkg {
     margin-right: 25px;
 }
 
-
-
+.header nav .social-box img:last-of-type {
+    margin-right: 0;
+}
 
 
 /* mostra esconde menu social */
@@ -192,10 +216,130 @@ header .icons-header img {
 
 
 /********************* Banner *********************/
+
 .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 60px;
+    padding: 20px;
     height: 606px;
     background-image: url(../images/Banner_Liga-Game-Mobile.png);
     background-size: cover;
     background-repeat: none;
+}
+
+.banner h2 {
+    font-family: TitilliumWeb-Black;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 8px #EC4358;
+}
+
+.banner a.btn-sobreliga {
+    width: 150px;
+    margin-bottom: 65px;
+    padding: 5px 0;
+    font-family: TitilliumWeb-SemiBold;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #F9AA01;
+    border: 1px solid #F9AA01;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+}
+
+/********************* Jogos *********************/
+
+section.card-jogos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 10px;
+}
+
+section.card-jogos>img {
+    max-width: 335px;
+}
+
+section.card-jogos>img:first-of-type {
+    margin-bottom: 60px;
+}
+
+/********************* Time Progamer *********************/
+
+section.progamer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* height: 1253px; */
+    padding-top: 80px;
+    padding-right: 20px;
+    padding-bottom: 120px;
+    padding-left: 20px;
+    background-color: #F9AA01;
+}
+
+section.progamer h2 {
+    margin-bottom: 20px;
+    font-family: TitilliumWeb-SemiBold;
+    font-size: 1.7rem;
+    color: black;
+    text-align: center;
+}
+
+section.progamer hr {
+    width: 50%;
+    margin: 0 auto 60px;
+    border: 1px solid #000;
+}
+
+/* section.progamer .layer-image-background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+} */
+
+/* .layer-image-background */
+section.progamer>img {
+    max-width: 260px;
+}
+
+/* .layer-image-background */
+section.progamer>img:first-of-type {
+    margin-bottom: 100px;
+}
+
+/* cards progamer */
+.cards-progamer-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: transparent;
+}
+
+.card-bkg .cards-jogos {
+
+    max-width: 230px;
+    margin-bottom: 40px;
+
+    background-color: #EC4358;
 }
