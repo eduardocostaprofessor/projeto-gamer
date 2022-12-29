@@ -1,33 +1,40 @@
-/* imports */
+/* TitilliumWeb */
 @font-face {
     font-family: TitilliumWeb-Black;
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
 }
-
 @font-face {
     font-family: TitilliumWeb-SemiBold;
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf);
 }
-
 @font-face {
     font-family: TitilliumWeb-Bold;
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
 }
-
 @font-face {
     font-family: TitilliumWeb-Regular;
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
 }
 
-@font-face {
-    font-family: Inter-Regular;
-    src: url(../assets/fonts/Inter/static/Inter-Regular.ttf);
-}
-
+/* Inter */
 @font-face {
     font-family: Inter-Thin;
     src: url(../assets/fonts/Inter/static/Inter-Thin.ttf);
 }
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../assets/fonts/Inter/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url(../assets/fonts/Inter/static/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: Inter-Bold;
+    src: url(../assets/fonts/Inter/static/Inter-Bold.ttf);
+}
+
+
 
 * {
     margin: 0;
@@ -167,7 +174,7 @@ header .nav-bkg {
 
 .header nav .social-box {
     position: absolute;
-    bottom: 20px;
+    bottom: 60px;
     left: 0;
     display: flex;
     justify-content: center;
@@ -254,7 +261,7 @@ header .icons-header img {
     background-color: #F9AA01;
     border: 1px solid #F9AA01;
     border-radius: 8px;
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 /********************* Jogos *********************/
@@ -306,16 +313,6 @@ section.progamer hr {
     margin: 0 auto 60px;
     border: 1px solid #000;
 }
-
-/* section.progamer .layer-image-background {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-} */
 
 /* .layer-image-background */
 section.progamer>img {
@@ -391,3 +388,59 @@ section.progamer>img:first-of-type {
     text-align: justify;
 }
 
+/********************* Notícias *********************/
+
+section.noticias {
+    background-image: url(../images/backgrund_notícias-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 40px 20px 20px;
+}
+
+section.noticias > div {
+    width: 100%;
+    /* border: 1px solid yellowgreen; */
+}
+
+section.noticias div h2 {
+    text-align: center;
+    font-family: TitilliumWeb-Black;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+section.noticias div hr {
+    width: 50%;
+    margin: 30px auto 80px;
+    border: 1px solid #F9AA01;
+}
+
+/* card notícia */
+section.noticias .card-noticia {
+    max-width: 335px;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to right bottom, rgba(37, 26, 52, .34), rgba(5, 1, 12, .79));
+    border-radius: 8px;
+}
+
+section.noticias .card-noticia > img {
+    width: 100%;
+}
+
+section.noticias .card-noticia h3 {
+    margin: 20px 10px;
+
+    font-family: TitilliumWeb-Bold;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+section.noticias .card-noticia p {
+    margin: 20px 10px;
+    font-family: Inter-Thin;
+    text-align: justify;
+
+}
