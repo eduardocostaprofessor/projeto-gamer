@@ -24,6 +24,11 @@
     src: url(../assets/fonts/Inter/static/Inter-Regular.ttf);
 }
 
+@font-face {
+    font-family: Inter-Thin;
+    src: url(../assets/fonts/Inter/static/Inter-Thin.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -323,23 +328,66 @@ section.progamer>img:first-of-type {
 }
 
 /* cards progamer */
-.cards-progamer-box {
+.cards-progamer-layer {
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
-    
+    padding: 0  20px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
     height: 100%;
     background-color: transparent;
 }
-
-.card-bkg .cards-jogos {
-
-    max-width: 230px;
-    margin-bottom: 40px;
-
-    background-color: #EC4358;
+/* efeito borda gradient */
+.cards-progamer-layer .card-bkg {
+    padding: 1px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .3), rgba(255, 255, 255, .05));
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
 }
+
+.cards-progamer-layer .card-bkg:first-of-type {
+    align-self: flex-end;
+    margin-top: 320px;
+}
+
+.cards-progamer-layer .card-bkg:last-of-type {
+    align-self: flex-start;
+    margin-bottom: 75px;
+    
+}
+
+.cards-progamer-layer .card-bkg .card-jogos {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    max-width: 231px;
+    height: 300px;
+    padding: 25px;
+    font-size: .8rem;
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, .2), rgba(47, 7, 109, .83));
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+}
+
+
+.cards-progamer-layer .card-bkg .card-jogos h3 {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: TitilliumWeb-Black;
+    /* text-shadow: 0 0 0px #fff; */
+    text-align: justify;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cards-progamer-layer .card-bkg .card-jogos p {
+    font-family: Inter-Thin;
+    text-align: justify;
+}
+
