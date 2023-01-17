@@ -371,8 +371,8 @@ section.progamer .gamers .card-bkg .card-jogos {
 
 section.progamer .card-bkg .card-jogos h3 {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-family: TitilliumWeb-Black;
     /* text-shadow: 0 0 0px #fff; */
     text-align: justify;
@@ -477,7 +477,7 @@ footer .card-ftitem-box {
 
 footer .card-ftitem-box #ftlogo-link {
     width: 120px;
-    
+    margin-bottom: 20px;
     align-self: center;
     /* border: 1px solid green; */
 }
@@ -507,6 +507,7 @@ footer .card-ftitem-box p {
 footer .card-ftitem-box .social-fticons {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 footer .card-ftitem-box .social-fticons img {
