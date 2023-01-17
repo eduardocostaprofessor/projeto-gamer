@@ -3,14 +3,17 @@
     font-family: TitilliumWeb-Black;
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
 }
+
 @font-face {
     font-family: TitilliumWeb-SemiBold;
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf);
 }
+
 @font-face {
     font-family: TitilliumWeb-Bold;
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
 }
+
 @font-face {
     font-family: TitilliumWeb-Regular;
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
@@ -21,14 +24,17 @@
     font-family: Inter-Thin;
     src: url(../assets/fonts/Inter/static/Inter-Thin.ttf);
 }
+
 @font-face {
     font-family: Inter-Regular;
     src: url(../assets/fonts/Inter/static/Inter-Regular.ttf);
 }
+
 @font-face {
     font-family: Inter-SemiBold;
     src: url(../assets/fonts/Inter/static/Inter-SemiBold.ttf);
 }
+
 @font-face {
     font-family: Inter-Bold;
     src: url(../assets/fonts/Inter/static/Inter-Bold.ttf);
@@ -283,24 +289,30 @@ section.card-jogos>img:first-of-type {
     margin-bottom: 60px;
 }
 
-/********************* Time Progamer *********************/
 
+
+
+
+/********************* Time Progamer *********************/
 section.progamer {
-    position: relative;
+    /* apenas para visualizar o box, pois o fundo é transparente */
+    background-color: #F9AA01;
+}
+
+section.progamer .progamer-flex {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    /* height: 1253px; */
     padding-top: 80px;
     padding-right: 20px;
     padding-bottom: 120px;
     padding-left: 20px;
-    background-color: #F9AA01;
 }
 
 section.progamer h2 {
+    width: 100%;
     margin-bottom: 20px;
     font-family: TitilliumWeb-SemiBold;
     font-size: 1.7rem;
@@ -314,50 +326,36 @@ section.progamer hr {
     border: 1px solid #000;
 }
 
-/* .layer-image-background */
-section.progamer>img {
-    max-width: 260px;
-}
-
-/* .layer-image-background */
-section.progamer>img:first-of-type {
-    margin-bottom: 100px;
-}
-
-/* cards progamer */
-.cards-progamer-layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    padding: 0  20px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-}
 /* efeito borda gradient */
-.cards-progamer-layer .card-bkg {
-    padding: 1px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .3), rgba(255, 255, 255, .05));
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+section.progamer .gamers {
+    /* para servir de referência ao absolute */
+    position: relative;
+    margin-bottom: 20px;
+    /* border: 1px solid #EC4358; */
 }
 
-.cards-progamer-layer .card-bkg:first-of-type {
-    align-self: flex-end;
-    margin-top: 320px;
+section.progamer .progamer-flex .gamers>img {
+    width: 314px;
 }
 
-.cards-progamer-layer .card-bkg:last-of-type {
-    align-self: flex-start;
-    margin-bottom: 75px;
-    
+
+section.progamer .progamer-flex .gamers #jogos-diferentes {
+    position: absolute;
+    right: 0;
+    bottom: 90px;
 }
 
-.cards-progamer-layer .card-bkg .card-jogos {
+section.progamer .progamer-flex .gamers #professores {
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+
+
+
+
+
+section.progamer .gamers .card-bkg .card-jogos {
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -371,8 +369,7 @@ section.progamer>img:first-of-type {
     border-radius: 8px;
 }
 
-
-.cards-progamer-layer .card-bkg .card-jogos h3 {
+section.progamer .card-bkg .card-jogos h3 {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -388,24 +385,31 @@ section.progamer>img:first-of-type {
     text-align: justify;
 }
 
+
+
+
 /********************* Notícias *********************/
 
 section.noticias {
     background-image: url(../images/backgrund_notícias-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
     padding: 40px 20px 20px;
 }
 
-section.noticias > div {
+section.noticias .noticias-flex {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+section.noticias .noticias-flex>div {
     width: 100%;
     /* border: 1px solid yellowgreen; */
 }
 
 section.noticias div h2 {
+    width: 100%;
     text-align: center;
     font-family: TitilliumWeb-Black;
     font-size: 1rem;
@@ -426,7 +430,7 @@ section.noticias .card-noticia {
     border-radius: 8px;
 }
 
-section.noticias .card-noticia > img {
+section.noticias .card-noticia>img {
     width: 100%;
 }
 
@@ -443,4 +447,78 @@ section.noticias .card-noticia p {
     font-family: Inter-Thin;
     text-align: justify;
 
+}
+
+
+
+
+/********************* Footer *********************/
+footer {
+    padding: 40px 20px;
+    background-color: #1B1426;
+    box-shadow: inset 0 30px 20px rgba(0, 0, 0, 0.8);
+}
+
+footer .footer-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .card-ftitem-box {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin-bottom: 50px;
+    /* border: 1px solid white; */
+}
+
+footer .card-ftitem-box #ftlogo-link {
+    width: 120px;
+    
+    align-self: center;
+    /* border: 1px solid green; */
+}
+
+footer .card-ftitem-box #ftlogo {
+    width: 120px;
+    margin: 0 auto;
+}
+
+footer .card-ftitem-box h2 {
+    font-family: TitilliumWeb-Bold;
+    font-size: 2rem;
+}
+
+footer .card-ftitem-box hr {
+    width: 30%;
+    border: 1px solid #F9AA01;
+    margin-bottom: 30px;
+}
+
+footer .card-ftitem-box p {
+    margin-bottom: 20px;
+    font-family: Inter-Thin;
+    text-align: justify;
+}
+
+footer .card-ftitem-box .social-fticons {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .card-ftitem-box .social-fticons img {
+    width: 40px;
+}
+
+/********************* MEDIAS *********************/
+
+@media screen and (min-width: 1200px) {
+    .container-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        border: 3px solid #EC4358;
+    }
 }
