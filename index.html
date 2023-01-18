@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <header class="header">
         <div class="container-grid">
             <div class="header-top">
@@ -227,12 +228,12 @@
                     <hr>
                 </div>
 
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Jogadores</a></li>
-                    <li><a href="#">Equipes</a></li>
-                    <li><a href="#">Notícias</a></li>
-                    <li><a href="#">Login</a></li>
+                <ul class="menu-footer">
+                    <li class="menu-ftitem"><a href="#">Início</a></li>
+                    <li class="menu-ftitem"><a href="#">Jogadores</a></li>
+                    <li class="menu-ftitem"><a href="#">Notícias</a></li>
+                    <li class="menu-ftitem"><a href="#">Login</a></li>
+                    <li class="menu-ftitem" id="link-equipe"><a href="#">Equipes</a></li>
                 </ul>
             </div>
 
@@ -243,18 +244,14 @@
                 </div>
 
                 <div>
-                    <p>
-                        <span>Localização:</span><br>
-                        Rua Niterói, 180 - São Caetano do Sul - SP
-                    </p>
-                    <p>
-                        <span>Junte-se a nós:</span><br>
-                        <a href="mailto:contato">contato@gamer.com.br</a>
-                    </p>
-                    <p>
-                        <span>Telefone:</span><br>
-                        (11) 0900-1010
-                    </p>
+                    <p class="contact-title">Localização:</p>
+                    <p class="contact-text">Rua Niterói, 180 - São Caetano do Sul - SP</p>
+
+                    <p class="contact-title">Junte-se a nós:</p>
+                    <p class="contact-text"><a href="mailto:contato">contato@gamer.com.br</a></p>
+
+                    <p class="contact-title">Telefone:</p>
+                    <p class="contact-text">(11) 0900-1010</p>
                 </div>
             </div>
 
@@ -263,7 +260,16 @@
                     <h2>Newsletter</h2>
                     <hr>
                 </div>
+
+                <form action="" class="frm-news">
+                    <div class="input-box">
+                        <input type="text" class="frm-input" placeholder="Digite seu email:">
+                    </div>
+                    <button type="button" class="frm-button">Enviar</button>
+                </form>
             </div>
+
+            <img src="" alt="Voltar ao Topo">
         </div>
 
         <div id="copyright">

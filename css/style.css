@@ -40,6 +40,21 @@
     src: url(../assets/fonts/Inter/static/Inter-Bold.ttf);
 }
 
+@font-face {
+    font-family: Quicksand-Regular;
+    src: url(../assets/fonts/Quicksand/static/Quicksand-Regular.ttf);
+}
+
+@font-face {
+    font-family: Quicksand-SemiBold;
+    src: url(../assets/fonts/Quicksand/static/Quicksand-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Quicksand-Bold;
+    src: url(../assets/fonts/Quicksand/static/Quicksand-Bold.ttf);
+}
+
 
 
 * {
@@ -513,7 +528,107 @@ footer .card-ftitem-box .social-fticons {
 footer .card-ftitem-box .social-fticons img {
     width: 40px;
 }
+footer .menu-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .menu-ftitem {
+    width: 30%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* margin-right: 10px; */
+}
 
+/* footer .menu-ftitem:last-of-type {
+    background-color: #EC4358;
+    
+} */
+
+footer .menu-ftitem::before {
+    content: "\2015";
+    margin-right: 10px;
+    color: #F9AA01;
+}
+
+footer .menu-ftitem a {
+    font-size: 1rem;
+    font-family: Inter-Regular;
+    text-decoration: none;
+    line-height: 2rem;
+    color: white;
+}
+
+
+
+footer a {
+    font-family: Quicksand-Regular;
+    text-decoration: none;
+    color: white;
+}
+
+footer p.contact-title {
+    margin-bottom: 10px;
+    font-family: Quicksand-Bold;
+    color: #F9AA01;
+    /* border: 1px solid white; */
+}
+
+footer p.contact-text {
+    margin-bottom: 10px;
+    font-family: Quicksand-Regular;
+}
+
+footer .frm-news {
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .input-box {
+    width: 100%;
+    height: 40px;
+    padding: 1px;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(239, 239, 239, .21) );
+    border-radius: 5px;
+}
+footer .input-box .frm-input {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    background-color: transparent;
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, .15), rgba(27, 20, 38, 0));
+    font-family: TitilliumWeb-Regular;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+footer .input-box .frm-input::placeholder {
+    color: white;
+}
+
+footer .frm-button {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #F9AA01;
+    color: #000;
+    font-family: TitilliumWeb-Bold;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+footer #copyright {
+    margin-top: 20px;
+    font-family: TitilliumWeb-Regular;
+    text-align: center;
+    font-size: .9rem;
+}
+/*  */
 /********************* MEDIAS *********************/
 
 @media screen and (min-width: 1200px) {
