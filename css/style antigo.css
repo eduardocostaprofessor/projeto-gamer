@@ -119,13 +119,14 @@ header #mostra-esconde-icones {
     display: none;
 }
 
-.header-flex {}
+.header-flex {
+
+}
 
 header .header-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 header .header-bottom #logotipo {
@@ -299,7 +300,7 @@ header .icons-header img {
 
 /********************* Jogos *********************/
 
-.card-jogos {
+section.card-jogos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -308,12 +309,11 @@ header .icons-header img {
     padding: 40px 10px;
 }
 
-.card-jogos>img {
-    width: 335px;
+section.card-jogos>img {
+    max-width: 335px;
 }
 
-
-.card-jogos>img:first-of-type {
+section.card-jogos>img:first-of-type {
     margin-bottom: 60px;
 }
 
@@ -343,9 +343,7 @@ section.progamer h2 {
     width: 100%;
     margin-bottom: 20px;
     font-family: TitilliumWeb-Black;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-size: 1.7rem;
     color: black;
     text-align: center;
 }
@@ -381,7 +379,7 @@ section.progamer .progamer-flex .gamers #professores {
     left: 0;
 }
 
-section.progamer .gamers .card-bkg .produto {
+section.progamer .gamers .card-bkg .card-jogos {
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -395,7 +393,7 @@ section.progamer .gamers .card-bkg .produto {
     border-radius: 8px;
 }
 
-section.progamer .card-bkg .produto h3 {
+section.progamer .card-bkg .card-jogos h3 {
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -406,7 +404,7 @@ section.progamer .card-bkg .produto h3 {
     text-transform: uppercase;
 }
 
-.cards-progamer-layer .card-bkg .produto p {
+.cards-progamer-layer .card-bkg .card-jogos p {
     font-family: Inter-Thin;
     text-align: justify;
 }
@@ -651,35 +649,24 @@ footer #copyright {
 /********************* MEDIAS *********************/
 /* Desktop */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
     .container-grid {
-        max-width: 992px;
+        max-width: 1200px;
         margin: 0 auto;
         /* border: 1px solid #EC4358; */
     }
-
     .header {
         position: static;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        flex-wrap: wrap;
     }
-
     .header label {
         display: none;
     }
 
     header .header-top {
-        display: block;
-        width: 100%;
-        border-bottom: 1px solid #F9AA01;
-    }
-
-    .header-top-flex {
         display: flex;
         justify-content: space-between;
-        padding: 10px 0;
+        border-bottom: 1px solid #F9AA01;
+        padding: 20px 0;
     }
 
     header .header-top span {
@@ -696,134 +683,11 @@ footer #copyright {
         margin-right: 0;
     }
 
-
-    header .header-bottom {
-        padding: 10px 0;
-    }
-
-    /* Menu */
-    header .nav-bkg {
-        position: static;
-        /* justify-content: space-between; */
-        width: 30%;
-        height: auto;
-        padding: 0;
-        background-image: none;
-        /* border: 1px solid red; */
-    }
-
-    header .nav-bkg nav {
-        flex-direction: row;
-        justify-content: space-between;
-        /* border: 1px solid white; */
-    }
-
-    .header nav a {
-        width: auto;
-        height: auto;
-        padding: 10px;
-        border: none;
-        /* border: 1px solid greenyellow; */
-    }
-
-
-    .header nav a.phone-box,
-    .header nav a.mail-box {
-        display: none;
-    }
-    .header nav a:hover {
-        background-color: transparent;
-        color: #F9AA01;
-    }
-
-    /* .header nav .social-box {
-        position: static;
-        
-        border: 1px solid yellow;
-    } */
-    .header nav .social-box {
-        display: none;
-    }
-    header .icons-header-bkg {
-        position: static;
-        width: auto;
-        height: auto;
-        background-image: none;
-    }
-
-
-    header .icons-header {
-        height: auto;
-        flex-direction: revert;
-        width: 100px;
-        padding: 10px;
-        background-image: none;
-        /* border: 1px solid red; */
-    }
-
-    /* Banner */
     .banner {
-        margin-top: 0;
         background-image: url(../images/Banner_Liga-Game.png);
-        background-size: auto 100%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: transparent;
     }
 
     .banner h2 {
         font-size: 3.5rem;
     }
-
-    .card-jogos {
-        flex-direction: row;
-        align-items: center;
-        padding: 80px 0px;
-    }
-
- 
-     .card-jogos  img {
-        width: 450px;
-    }
-    .card-jogos>img:first-of-type {
-        margin-bottom: 0;
-    }
-
-    /* Progamer */
-
-    section.progamer .progamer-flex {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        justify-content: space-between;
-    }
-    section.progamer .progamer-title {
-        width: 100%;
-    }
-    section.progamer h2 {
-        font-size: 2rem;
-        letter-spacing: 5px;
-    }
-
-    section.progamer hr {
-        width: 35%;
-    }
-
-    section.progamer .gamers {
-        height: 520px;
-        margin-right: 20px;
-        /* background: #EC4358; */
-    }
-
-    
-    section.progamer .progamer-flex .gamers>img {
-        height: 100%;
-        width: auto;
-    }
-
-    section.progamer .progamer-flex .gamers #professores {
-        top: auto;
-        bottom: 90px;
-    }
-    
 }
