@@ -425,7 +425,7 @@ section.noticias {
 
 section.noticias .noticias-flex {
     display: flex;
-    text-align: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -462,7 +462,6 @@ section.noticias .card-noticia>img {
 
 section.noticias .card-noticia h3 {
     margin: 20px 10px;
-
     font-family: TitilliumWeb-Bold;
     font-size: 1.4rem;
     text-align: left;
@@ -470,9 +469,8 @@ section.noticias .card-noticia h3 {
 
 section.noticias .card-noticia p {
     margin: 20px 10px;
-    font-family: Inter-Thin;
+    font-family: Quicksand-Regular;
     text-align: justify;
-
 }
 
 
@@ -765,6 +763,7 @@ footer #copyright {
     .banner {
         margin-top: 0;
         background-image: url(../images/Banner_Liga-Game.png);
+        
         background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: center;
@@ -824,6 +823,47 @@ footer #copyright {
     section.progamer .progamer-flex .gamers #professores {
         top: auto;
         bottom: 90px;
+    }
+
+    /* Notícias */
+
+    section.noticias {
+        position: relative;
+        z-index: 40;
+        background-image: url(../images/backgrund_notícias.png);
+    }
+
+    section.noticias:after  {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 41;
+        width: 100%;
+        height: 100%;
+        /* Verificar a quantidade de cores */
+        background-image: linear-gradient(to right bottom, rgba(45, 24, 77, 0), rgba(45, 24, 77, .4), rgba(27, 20, 38, 1));
+        backdrop-filter: blur(10px);
+
+    }
+    
+    section.noticias .noticias-flex {
+        position:relative;
+        z-index: 42;
+        justify-content: space-between;
+    }
+
+    
+    section.noticias .card-noticia {
+        max-width: 220px;
+        /* margin: 0; */
+    }
+
+    section.noticias div h2 {
+        font-size: 2.5rem;
+    }
+    section.noticias div hr {
+        width: 25%;
     }
     
 }
