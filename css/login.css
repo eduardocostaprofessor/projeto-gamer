@@ -278,13 +278,17 @@ header .icons-header img {
     height: 400px;
     padding: 1px;
     border: 1px solid white;
+    border-radius: 8px;
 }
 
 .frm-login {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 60px 20px;
+    /* border: 2px solid yellow; */
+    height: 100%;
 }
 
 .frm-login .login-title {
@@ -301,7 +305,7 @@ header .icons-header img {
 .frm-login .frm-linha {
     width: 100%;
     margin-bottom: 20px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .4), rgba(255, 255, 255, 0.1));
     border-radius: 10px;
 }
 
@@ -309,7 +313,7 @@ header .icons-header img {
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, .4), rgba(255, 255, 255, .1));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .4), rgba(255, 255, 255, .1));
     backdrop-filter: blur(25px);
     border-radius: 10px;
 }
@@ -318,6 +322,8 @@ header .icons-header img {
     width: 85%;
     height: 40px;
     background-color: transparent;
+    font-family: Inter-Thin;
+    font-size: 16px;
     outline: none;
     border: none;
 }
