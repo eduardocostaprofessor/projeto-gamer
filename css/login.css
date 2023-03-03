@@ -270,6 +270,8 @@ header .icons-header img {
     justify-content: center;
     align-items: center;
     background-image: url(../images/background-login-mobile.png);
+    background-position: left top;
+    background-repeat: no-repeat;
 }
 
  .bkg-login { /*aqui vai a borda gradient*/
@@ -277,26 +279,31 @@ header .icons-header img {
     max-width: 320px;
     height: 400px;
     padding: 1px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 8px;
-    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, .5), rgba(27, 20, 38, .05));
+    background-image: linear-gradient(to right, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0.05));
 }
 
 .frm-login {
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start; */
     align-items: center;
     flex-wrap: wrap;
-    padding: 35px 20px;
-    /* border: 2px solid yellow; */
+    padding: 35px 20px 35px;
     height: 100%;
+    background-image: linear-gradient(to right, rgba(27, 20, 38, .5), rgba(27, 20, 38, .2));
+    /* backdrop-filter: blur(15px); */
+    border-radius: 8px;
+    
+    
 }
 
 .frm-login .login-title {
     width: 100%;
     text-align: center;
     margin-bottom: 60px;
+    text-transform: uppercase;
+    font-family: TitilliumWeb-Black;
 
 }
 
@@ -327,7 +334,7 @@ header .icons-header img {
     width: 85%;
     height: 40px;
     background-color: transparent;
-    font-family: Inter-Thin;
+    font-family: TitilliumWeb-Regular;
     font-size: 16px;
     outline: none;
     border: none;
@@ -342,7 +349,7 @@ header .icons-header img {
 .frm-login .btn-logar {
     width: 100%;
     height: 40px;
-    font-family: TitilliumWeb-SemiBold;
+    font-family: TitilliumWeb-Bold;
     font-size: 1.5rem;
     background-color: #F9AA01;
     border-radius: 8px;
@@ -637,6 +644,57 @@ footer #copyright {
         background-image: none;
         /* border: 1px solid red; */
     }
+
+
+
+/* Main */
+
+.fundo-login {
+    margin-top: 0;
+    background-image: url(../assets/Banner_Login.png);
+    background-size: cover;
+    background-position: top  ;
+}
+
+.bkg-login {
+    max-width: 800px;
+    height: 520px;
+}
+
+.frm-login .login-title {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.frm-login .login-title hr {
+    margin-top: 5px;
+    width: 80px;
+    border-width: 1px;
+}
+
+.frm-login { 
+    padding-top: 50px;
+    padding-bottom: initial;
+}
+
+
+.frm-login .frm-linha {
+    max-width: 565px;
+}
+
+.frm-login .frm-linha input {
+    width: 100%;
+    max-width: 510px;
+}
+
+.frm-login .btn-logar {
+    max-width: 210px;
+}
+
+
+
+
+
 
 
 
