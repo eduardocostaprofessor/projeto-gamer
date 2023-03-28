@@ -98,26 +98,27 @@
             
             <form action="" class="frm-cad-equipe">
                 <div class="cadequipe-titulo">
-                    <h1>Cadastro de Equipes</h1>
+                    <h1>Cadastro de Jogadores</h1>
                     <hr>
                 </div>
 
-                <input class="campo-entrada" type="number" id="idEquipe" placeholder="Digite o Id da sua equipe:">
-                <input class="campo-entrada" type="text" placeholder="Digite o nome da sua equipe:">
-                <label class="foto" for="foto-file">
-                    Nenuma imagem selecionada...
-                    <input  type="file" id="foto-file">
-                </label>
+                <input class="campo-entrada" type="number" id="id-equipe" placeholder="Digite o Id da sua equipe:">
+                <input class="campo-entrada" type="text" id="nome-equipe" placeholder="Digite o nome da sua equipe:">
                 
-                <button>Cadastro</button>
-                
-                
-                
-                <!-- <select class="equipeid" id="equipeid">
+                <select class="campo-entrada" id="equipe-select">
                     <option value="">Selecione uma Equipe</option>
                     <option value="x">Equipe X</option>
                     <option value="y">Equipe Y</option>
-                </select> -->
+                </select>
+                
+                <input class="campo-entrada" type="text" id="nome-jogador" placeholder="Digite o nome do Jogador:">
+                <input class="campo-entrada" type="email" id="email-jogador" placeholder="Digite o Email do Jogador:">
+                <input class="campo-entrada" type="password" id="senha" placeholder="Digite a Senha:">
+                <button>Cadastrar</button>
+                
+                
+                
+                
             </form>
 
             <!-- TABELA CADASTRO DE EQUIPES -->
@@ -127,27 +128,27 @@
                     <tr>
                         <th>Id</th>
                         <th>Nome</th>
-                        <th>Foto</th>
+                        <th>Email</th>
                         <th>&spades;</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Loud</td>
-                        <td><img class="green-play" src="./assets/green-play.svg" alt=""></td>
+                        <td>Eduardo</td>
+                        <td>eduardo@gmail.com</td>
                         <td><img class="yellow-trash" src="./assets/trash.png" alt=""></td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>Loud</td>
-                        <td><img class="green-play" src="./assets/green-play.svg" alt=""></td>
+                        <td>Eduardo</td>
+                        <td>eduardo@gmail.com</td>
                         <td><img class="yellow-trash" src="./assets/trash.png" alt=""></td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>Loud</td>
-                        <td><img class="green-play" src="./assets/green-play.svg" alt=""></td>
+                        <td>Eduardo</td>
+                        <td>eduardo@gmail.com</td>
                         <td><img class="yellow-trash" src="./assets/trash.png" alt=""></td>
                     </tr>
                 </tbody>
